@@ -23,7 +23,6 @@ This is the backend for the PingCRM application, built with FastAPI, SQLAlchemy,
 
 ### Installation
 1. Clone the repository:
-   ```bash
   git clone https://github.com/yourusername/pingcrm-backend.git
   cd pingcrm-backend
 
