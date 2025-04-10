@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Optional
 from datetime import datetime
 
 class OrganizationBase(BaseModel):
@@ -29,5 +30,6 @@ class Contact(ContactBase):
     id: int
     created_at: datetime
     updated_at: datetime
+    organization: Organization
     class Config:
         from_attributes = True

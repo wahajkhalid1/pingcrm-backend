@@ -19,7 +19,7 @@ class Contact(Base):
     last_name = Column(String)
     email = Column(String)
     phone = Column(String)
-    organization_id = Column(Integer, ForeignKey("organizations.id"))
+    organization_id = Column(Integer, ForeignKey("organizations.id"), nullable=False)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
     organization = relationship("Organization", back_populates="contacts")
